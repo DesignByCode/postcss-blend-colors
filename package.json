@@ -10,9 +10,10 @@
     "url": "https://github.com/DesignByCode/postcss-blend-colors/issues"
   },
   "homepage": "https://github.com/DesignByCode/postcss-blend-colors#readme",
-  "main": "index.js",  "publishConfig": {
-  "access": "public"
-},
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsc --declaration && vite build",
     "clean": "rd /s /q dist .cache>nul 2>&1|echo.>nul",
