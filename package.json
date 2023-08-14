@@ -2,11 +2,49 @@
   "name": "postcss-blend-colors",
   "version": "1.0.0",
   "description": "A postcss plugin to blend 2 colors by a given factor",
-  "main": "index.js",
-  "scripts": {
-    "test": "vitest",
-    "test:coverage": "vitest --coverage"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DesignByCode/postcss-blend-colors.git"
   },
+  "bugs": {
+    "url": "https://github.com/DesignByCode/postcss-blend-colors/issues"
+  },
+  "homepage": "https://github.com/DesignByCode/postcss-blend-colors#readme",
+  "main": "index.js",  "publishConfig": {
+  "access": "public"
+},
+  "scripts": {
+    "build": "tsc --declaration && vite build",
+    "clean": "rd /s /q dist .cache>nul 2>&1|echo.>nul",
+    "dev": "pnpm build --watch",
+    "prepublishOnly": "pnpm build",
+    "release": "release-it",
+    "test": "vitest",
+    "test:coverage": "vitest  --coverage"
+  },
+
+  "lint-staged": {
+    "src/**/*.ts": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "authors": [
+    {
+      "name": "Claude Myburgh",
+      "email": "claude@designbycode.co.za",
+      "url": "https://designbycode.co.za"
+    }
+  ],
+  "browserslist": [
+    "> .5% or last 2 versions"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/DesignByCode/postcss-blend-colors/blob/main/LICENCE"
+    }
+  ],
   "peerDependencies": {
     "chroma-js": "^2.4.2",
     "postcss": "^8.4.27"
@@ -17,6 +55,18 @@
     "postcss-blend-colors": "link:"
   },
   "devDependencies": {
+    "@release-it/bumper": "^5.1.0",
+    "@release-it/conventional-changelog": "^7.0.0",
+    "@release-it/keep-a-changelog": "^4.0.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^9.0.4",
+    "@types/node": "^20.4.10",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.8",
+    "release-it": "^16.1.4",
+    "semantic-release": "^21.0.7",
+    "terser": "^5.19.2",
+    "vite-plugin-dts": "^3.5.1",
     "@vitest/coverage-istanbul": "^0.34.1",
     "@vitest/coverage-v8": "^0.34.1",
     "vite": "^4.4.9",
