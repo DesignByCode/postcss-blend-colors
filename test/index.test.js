@@ -66,19 +66,19 @@ describe("postcss-blend-color plugin", () => {
   it("should blend colors in declarations without percentage or decimal", async () => {
     const inputCss = `
       .test {
-        color: blend(#FF0000, #00FF00);
-        background-color: blend(#0000FF, #FFFF00);
+        color: blend(#FF0000, #00FF00, 0.25);
+        background-color: blend(#0000FF, #FFFF00, 0.5);
       }
     `
 
     const expectedCss = `
       .test {
-        color: #b4b400;
+        color: #dd8000;
         background-color: #b4b4b4;
       }
     `
-    const result2 = await postcss([plugin]).process(inputCss, { from: undefined })
-    expect(result2.css).toEqual(expectedCss)
+    const result = await postcss([plugin]).process(inputCss, { from: undefined })
+    expect(result.css).toEqual(expectedCss)
   })
 
   it("should blend colors in declarations by decimal", async () => {
@@ -95,7 +95,25 @@ describe("postcss-blend-color plugin", () => {
         background-color: #8080dd;
       }
     `
-    const result2 = await postcss([plugin]).process(inputCss, { from: undefined })
-    expect(result2.css).toEqual(expectedCss)
+    const result = await postcss([plugin]).process(inputCss, { from: undefined })
+    expect(result.css).toEqual(expectedCss)
+  })
+
+  it("should skip", async () => {
+    const inputCss = `
+      .test {
+        color: #dd8000;
+        background-color: #8080dd;
+      }
+    `
+
+    const expectedCss = `
+      .test {
+        color: #dd8000;
+        background-color: #8080dd;
+      }
+    `
+    const result = await postcss([plugin]).process(inputCss, { from: undefined })
+    expect(result.css).toEqual(expectedCss)
   })
 })

@@ -2,21 +2,20 @@
 <img src="banner.svg" alt="Title banner"/>
 </a>
 
-## PostCSS Blend Color Plugin
+## PostCSS Blend Colors Plugin
 
-[![npm version](https://badge.fury.io/js/@designbycode%2Fpostcss-color-mix.svg)](https://badge.fury.io/js/@designbycode%2Fpostcss-color-mix)
-![npm](https://img.shields.io/npm/dt/%40designbycode/postcss-color-mix)
-![NPM](https://img.shields.io/npm/l/%40designbycode%2Fpostcss-color-mix)
-![npm bundle size](https://img.shields.io/bundlephobia/min/%40designbycode%2Fpostcss-color-mix)
-[![Test](https://github.com/DesignByCode/postcss-color-mix/actions/workflows/test.yaml/badge.svg)](https://github.com/DesignByCode/postcss-color-mix/actions/workflows/test.yaml)
+[![npm version](https://badge.fury.io/js/postcss-blend-colors.svg)](https://badge.fury.io/js/postcss-blend-colors)
+![npm](https://img.shields.io/npm/dt/postcss-blend-colors)
+![NPM](https://img.shields.io/npm/l%2Fpostcss-blend-colors)
+![npm bundle size](https://img.shields.io/bundlephobia/min%2Fpostcss-blend-colors)
+[![Test](https://github.com/DesignByCode/postcss-blend-colors/actions/workflows/test.yaml/badge.svg)](https://github.com/DesignByCode/postcss-blend-colors/actions/workflows/test.yaml)
 ![ts](https://badgen.net/badge/Built%20With/TypeScript/blue)
-[![GitHub stars](https://img.shields.io/github/stars/DesignByCode/postcss-color-mix?style=social)](https://github.com/DesignByCode/postcss-color-mix/stargazers)
-[![HitCount](https://hits.dwyl.com/designbycode/postcss-color-mix.svg?style=flat)](http://hits.dwyl.com/designbycode/postcss-color-mix)
+[![GitHub stars](https://img.shields.io/github/stars/DesignByCode/postcss-blend-colors?style=social)](https://github.com/DesignByCode/postcss-blend-colors/stargazers)
+[![HitCount](https://hits.dwyl.com/designbycode/postcss-blend-colors.svg?style=flat)](http://hits.dwyl.com/designbycode/postcss-blend-colors)
 
-[![NPM](https://nodei.co/npm/@designbycode/postcss-color-mix.png)](https://nodei.co/npm/@designbycode/postcss-color-mix/)
+[![NPM](https://nodei.co/npm/postcss-blend-colors.png)](https://nodei.co/npm/postcss-blend-colors/)
 
-The Tailwind CSS **Text Shadow Plugin** extends the default set of utility classes in **Tailwind CSS** to provide easy text shadow customization for your web projects. With this plugin, you can apply custom text shadows using utility
-classes or define your own text shadow variations based on predefined steps and color palettes.
+A PostCSS plugin for mixing to colors.
 
 ## 📇 Table of Contents
 
@@ -36,19 +35,19 @@ To use this plugin, you need to have Tailwind CSS installed in your project. If 
 #### Using pnpm
 
 ```bash
-pnpm add @designbycode/postcss-color-mix
+pnpm add postcss-blend-colors
 ```
 
 #### Using npm
 
 ```bash
-npm install @designbycode/postcss-color-mix
+npm install @ostcss-blend-colors
 ```
 
 #### Using yarn
 
 ```bash
-yarn add @designbycode/postcss-color-mix
+yarn add @ostcss-blend-colors
 ```
 
 ## Contributing
@@ -57,8 +56,8 @@ Contributions to this plugin are welcome! If you encounter any issues, have feat
 
 ### Contributors
 
-<a href="https://github.com/DesignByCode/postcss-color-mix/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=DesignByCode/postcss-color-mix" />
+<a href="https://github.com/DesignByCode/postcss-blend-colors/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=DesignByCode/postcss-blend-colors" />
 </a>
 
 ## License
