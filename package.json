@@ -15,10 +15,8 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsc --declaration && vite build",
+    "build": "echo.>nul",
     "clean": "rd /s /q dist .cache>nul 2>&1|echo.>nul",
-    "dev": "pnpm build --watch",
-    "prepublishOnly": "pnpm build",
     "release": "release-it",
     "test": "vitest",
     "test:coverage": "vitest  --coverage"
