@@ -9,8 +9,8 @@ module.exports = (opts = {}) => {
     postcssPlugin: "postcss-blend-colors",
     Root(root, postcss) {
       root.walkDecls(function (decl) {
-        if (decl.value.includes("blend(")) {
-          const regex = /blend\((rgba?\([^)]*\)|hsla?\([^)]*\)|#[0-9a-fA-F]{3,8}|[a-z]+),\s*(rgba?\([^)]*\)|hsla?\([^)]*\)|#[0-9a-fA-F]{3,8}|[a-z]+)(?:,\s*([\d.]+)(?:%|\b))?\)/g
+        if (decl.value.includes("mix(")) {
+          const regex = /mix\((rgba?\([^)]*\)|hsla?\([^)]*\)|#[0-9a-fA-F]{3,8}|[a-z]+),\s*(rgba?\([^)]*\)|hsla?\([^)]*\)|#[0-9a-fA-F]{3,8}|[a-z]+)(?:,\s*([\d.]+)(?:%|\b))?\)/g
           const matches = regex.exec(decl.value)
           if (matches) {
             const color1 = matches[1].trim()

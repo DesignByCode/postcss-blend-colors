@@ -19,12 +19,16 @@ A PostCSS plugin for mixing to colors.
 
 ## 📇 Table of Contents
 
+
 * [Installation](#installation)
     * [Using pnpm](#using-pnpm)
     * [Using npm](#using-npm)
     * [Using yarn](#using-yarn)
+* [Setup config](#setup-config)
+  * [How to use](#how-to-use-)
+  * [Output](#output)
 * [Contributing](#contributing)
-    * [Contributors](#contributors)
+  * [Contributors](#contributors)
 * [License](#license)
 * [Author](#author)
 
@@ -41,14 +45,41 @@ pnpm add postcss-blend-colors
 #### Using npm
 
 ```bash
-npm install @ostcss-blend-colors
+npm install postcss-blend-colors
 ```
 
 #### Using yarn
 
 ```bash
-yarn add @ostcss-blend-colors
+yarn add postcss-blend-colors
 ```
+
+## Setup config
+In postcss.config.js paste the following
+```javascript
+module.exports = {
+  plugins: {
+    "postcss-blend-colors": {}
+  }
+}
+```
+
+### How to use 
+```css
+body {
+  background: mix(red, blue);
+  color: mix(red, blue, 0.25);
+}
+```
+### Output
+```css
+body {
+  background: #b400b4;
+  color: #dd0080;
+}
+```
+
+
 
 ## Contributing
 
