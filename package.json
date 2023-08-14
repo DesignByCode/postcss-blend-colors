@@ -1,6 +1,6 @@
 {
   "name": "postcss-blend-colors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A postcss plugin to blend 2 colors by a given factor",
   "repository": {
     "type": "git",
