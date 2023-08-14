@@ -24,3 +24,11 @@ esbuild.config.js
 *.svg
 README.md
 CHANGELOG.md
+
+
+.prettierignore
+.relase-it.json
+vite.config.*
+release.config.*
+test
+coverage
