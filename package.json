@@ -1,0 +1,35 @@
+{
+  "name": "postcss-blend-colors",
+  "version": "1.0.0",
+  "description": "A postcss plugin to blend 2 colors by a given factor",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "test:coverage": "vitest --coverage"
+  },
+  "peerDependencies": {
+    "chroma-js": "^2.4.2",
+    "postcss": "^8.4.27"
+  },
+  "dependencies": {
+    "chroma-js": "^2.4.2",
+    "postcss": "^8.4.27"
+  },
+  "devDependencies": {
+    "@vitest/coverage-istanbul": "^0.34.1",
+    "@vitest/coverage-v8": "^0.34.1",
+    "vite": "^4.4.9",
+    "vitest": "^0.34.1"
+  },
+  "keywords": [
+    "postcss",
+    "plugin",
+    "postcss-plugin",
+    "color-mix",
+    "color-blending",
+    "blend-color",
+    "color-mixer"
+  ],
+  "author": "",
+  "license": "MIT"
+}
