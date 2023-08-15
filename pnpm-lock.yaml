@@ -12,7 +12,6 @@ specifiers:
   chroma-js: ^2.4.2
   husky: ^8.0.3
   postcss: ^8.4.27
-  postcss-blend-colors: 'link:'
   prettier: ^2.8.8
   release-it: ^16.1.5
   semantic-release: ^21.0.7
@@ -24,7 +23,6 @@ specifiers:
 dependencies:
   chroma-js: 2.4.2
   postcss: 8.4.27
-  postcss-blend-colors: 'link:'
 
 devDependencies:
   '@release-it/bumper': 5.1.0_release-it@16.1.5
