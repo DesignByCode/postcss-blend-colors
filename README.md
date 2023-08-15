@@ -4,10 +4,11 @@
 
 ## PostCSS Blend Colors Plugin
 
+[//]: # (![npm bundle size]&#40;https://img.shields.io/bundlephobia/minzip/postcss-blend-colors&#41;)
+
 [![npm version](https://badge.fury.io/js/postcss-blend-colors.svg)](https://badge.fury.io/js/postcss-blend-colors)
 ![npm](https://img.shields.io/npm/dt/postcss-blend-colors)
 ![NPM](https://img.shields.io/npm/l%2Fpostcss-blend-colors)
-![npm bundle size](https://img.shields.io/bundlephobia/min%2Fpostcss-blend-colors)
 [![Test](https://github.com/DesignByCode/postcss-blend-colors/actions/workflows/test.yaml/badge.svg)](https://github.com/DesignByCode/postcss-blend-colors/actions/workflows/test.yaml)
 ![ts](https://badgen.net/badge/Built%20With/TypeScript/blue)
 [![GitHub stars](https://img.shields.io/github/stars/DesignByCode/postcss-blend-colors?style=social)](https://github.com/DesignByCode/postcss-blend-colors/stargazers)

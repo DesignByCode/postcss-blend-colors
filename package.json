@@ -49,8 +49,7 @@
   },
   "dependencies": {
     "chroma-js": "^2.4.2",
-    "postcss": "^8.4.27",
-    "postcss-blend-colors": "link:"
+    "postcss": "^8.4.27"
   },
   "devDependencies": {
     "@release-it/bumper": "^5.1.0",
