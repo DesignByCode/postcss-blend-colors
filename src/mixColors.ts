@@ -1,6 +1,6 @@
 import chroma, { Color, InterpolationMode } from 'chroma-js';
 
-const mixColors = (color1: string | Color, color2: string | Color, ratio: number = 0.5, mode: InterpolationMode = 'rgb'): string => {
+const mixColors = (color1: string | Color, color2: string | Color, ratio: number = 0.5, mode?: InterpolationMode): string => {
   if (ratio < 0 || ratio > 1) {
     ratio = 0.5;
   }

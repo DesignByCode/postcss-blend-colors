@@ -13,7 +13,8 @@ export default defineConfig({
       functions: 60,
       statements: 60,
       provider: "istanbul",
-      reporter: ["json-summary", "text"],
+      reporter: ["json-summary", "text", "json"],
+      reportOnFailure: true
     },
   },
   build: {

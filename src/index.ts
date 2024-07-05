@@ -12,9 +12,9 @@ const postcssBlendColors: Plugin = {
         if (matches) {
           const color1 = matches[1].trim();
           const color2 = matches[2].trim();
-          const ratio = matches[3] ? parseFloat(matches[3]) : 0.5;
+          const ratio = parseFloat(matches[3]) || 0.5;
           const blendedColor = mixColors(color1, color2, ratio);
-          decl.value = decl.value.replace(matches[0], chroma(blendedColor).hex("auto"));
+          decl.value = decl.value.replace(matches[0], chroma(blendedColor).hex('rgb'));
         }
       }
     });
