@@ -1,7 +1,6 @@
-import { describe, expect, it } from "vitest"
-import plugin from "../index"
-
-import postcss from "postcss"
+import {describe, expect, it} from "vitest";
+import postcss from "postcss";
+import plugin from "src/index";
 
 describe("# Testing regexColorMix", function () {
   it("should match mix() function with valid arguments", () => {
@@ -116,4 +115,7 @@ describe("postcss-mix-color plugin", () => {
     const result = await postcss([plugin]).process(inputCss, { from: undefined })
     expect(result.css).toEqual(expectedCss)
   })
+
+
+
 })

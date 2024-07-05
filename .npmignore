@@ -28,7 +28,7 @@ CHANGELOG.md
 
 .prettierignore
 .relase-it.json
-vite.config.*
+vite.config.ts
 release.config.*
 test
 coverage
